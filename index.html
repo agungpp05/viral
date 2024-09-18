@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman dengan Tabel Besar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .menu-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5em;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #00a2ff; /* Green background for the menu */
+            padding: 10px 0;
+            text-align: center;
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #00a2ff; /* Darker green on hover */
+        }
+        .content {
+            padding: 20px;
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 16px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+        th {
+            background-color: #00aaf8; /* Green for header */
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e9ecef;
+        }
+        a {
+            color: #007bff; /* Blue for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+            }
+            .content {
+                padding: 15px;
+            }
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navMenu');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Selamat datang di situs gelap</h1>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav id="navMenu">
+        <ul>
+            <li><a href="#">foto tobrut</a></li>
+            <li><a href="#">pap</a></li>
+            <li><a href="#">ig tobrut</a></li>
+            <li><a href="#">ada deh</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <p>Anda cari yang viral</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Viral 1</td>
+                    <td><a href="https://youtu.be/5c_eT1Jvdpc?si=LjNgzbl-gTVZ8s8c" target="_blank">Tonton Video Viral 1</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 2</td>
+                    <td><a href="https://youtu.be/rbVvL035GiQ?si=TODwjumOacxVMgA-" target="_blank">Tonton Video Viral 2</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 3</td>
+                    <td><a href="https://youtu.be/i-QnVFifRZ4?si=Ohknv5dZy7lPgLl8" target="_blank">Tonton Video Viral 3</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 4</td>
+                    <td><a href="https://youtu.be/g_68g51ptVs?si=BDVbg2WQXnYZuJfW" target="_blank">Tonton Video Viral 4</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 5</td>
+                    <td><a href="https://youtu.be/hMnu4sNGPiA?si=P4IzGicM1NptxZma" target="_blank">Tonton Video Viral 5</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 6</td>
+                    <td><a href="https://youtu.be/bWHxBzA-IM8?si=wfAk_b-jT9Ek5a7W" target="_blank">Tonton Video Viral 6</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 7</td>
+                    <td><a href="https://youtu.be/Z2foKHK4gIo?si=1FkkUUvsP06S5ozT" target="_blank">Tonton Video Viral 7</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 8</td>
+                    <td><a href="https://youtu.be/7KvHUcY0rIs?si=GL0-EJF9Q7c_KGby" target="_blank">Tonton Video Viral 8</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 9</td>
+                    <td><a href="https://youtu.be/QtyTiusOGqc?si=Qhuv4nlNa6HRsxrp" target="_blank">Tonton Video Viral 9</a></td>
+                </tr>
+                <tr>
+                    <td>Viral 10</td>
+                    <td><a href="https://youtu.be/a_igs-XJT3Y?si=9lrp8c70wprkMJMr" target="_blank">Tonton Video Viral 10</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
